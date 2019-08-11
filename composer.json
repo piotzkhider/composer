@@ -1,0 +1,25 @@
+{
+  "name": "piotzkhider/composer",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Skeleton\\": "src/"
+    }
+  },
+  "scripts": {
+    "pre-install-cmd": "Skeleton\\Composer::preInstall",
+    "post-install-cmd": "Skeleton\\Composer::postInstall",
+    "pre-update-cmd": "Skeleton\\Composer::preUpdate",
+    "post-update-cmd": "Skeleton\\Composer::postUpdate",
+    "post-root-package-install": "Skeleton\\Composer::postRootPackageInstall",
+    "post-create-project-cmd": "Skeleton\\Composer::postCreateProject"
+  }
+}
